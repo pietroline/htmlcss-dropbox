@@ -165,25 +165,24 @@
             .operazioni_dropbox_business .container .row{
                 background-color: maroon;
                 width: 100%;
-                height: 40%;
-                margin: 2% 0%;
+                height: 50%;
             }
 
             .operazioni_dropbox_business .row .content{
                 background-color: red;
                 width: 30%;
-                height: 100%;
-                display: inline-block;
-            }
-            
-            .operazioni_dropbox_business .row .content:nth-child(2){
-                margin: 0% 4%;
+                height: 80%;
+                float: left;
+                margin: 0% 0% 5% 5%;
             }
 
-            .operazioni_dropbox_business .row .content:nth-child(5){
-                margin: 0% 4%;
+            .operazioni_dropbox_business .row .content:first-child{
+                margin-left: 0%;
             }
 
+            .operazioni_dropbox_business .row .content:last-child{
+                margin-right: 0%;
+            }
 
     main .team_dropbox_business{
         background-color: brown;
