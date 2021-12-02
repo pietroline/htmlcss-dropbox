@@ -3,3 +3,86 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* start header's css */
+    header .menu{
+        background-color: grey;
+        width: 100%; /*provvisorio*/
+        height: 50px; /*provvisorio*/
+    }
+
+    /* start menu's css */
+        .menu .logo{
+            float: left;
+            background-color: red;
+            width: 15%; /*provvisorio*/
+            height: 50px; /*provvisorio*/
+        }
+
+        .menu .nav_left{
+            float: left;
+            background-color: yellow;
+            width: 30%; /*provvisorio*/
+            height: 50px; /*provvisorio*/
+        }
+
+        .menu .nav_right{
+            float: right;
+            background-color: green;
+            width: 30%; /*provvisorio*/
+            height: 50px; /*provvisorio*/
+        }
+    /* menu's css end */
+    
+    header .jumbotron{
+        background-color: cyan;
+        width: 100%; /*provvisorio*/
+        height: 600px; /*provvisorio*/
+    }
+/* header's css end */
+
+/* start main's css */
+    main .piano_dropbox{
+        background-color: darkmagenta;
+        width: 100%; /*provvisorio*/
+        height: 600px; /*provvisorio*/
+    }
+
+    main .partner_dropbox{
+        background-color: darkorange;
+        width: 100%; /*provvisorio*/
+        height: 300px; /*provvisorio*/
+    }
+
+    main .operazioni_dropbox_business{
+        background-color: darkolivegreen;
+        width: 100%; /*provvisorio*/
+        height: 600px; /*provvisorio*/
+    }
+
+    main .team_dropbox_business{
+        background-color: brown;
+        width: 100%; /*provvisorio*/
+        height: 300px; /*provvisorio*/
+    }
+
+    main .banner_prova_gratuita{
+        background-color: pink;
+        width: 100%; /*provvisorio*/
+        height: 200px; /*provvisorio*/
+    }
+
+    main .faq{
+        background-color: midnightblue;
+        width: 100%; /*provvisorio*/
+        height: 400px; /*provvisorio*/
+    }
+/* main's css end */
+
+/* start footer's css */
+    footer .container{
+        background-color: black;
+        width: 100%; /*provvisorio*/
+        height: 300px; /*provvisorio*/
+    }
+/* footer's css end */
