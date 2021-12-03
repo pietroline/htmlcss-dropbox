@@ -237,6 +237,12 @@ body{
                 margin-top: 20px;
             }
 
+            .operazioni_dropbox_business .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
             .operazioni_dropbox_business .row .content{
                 width: calc(100% / 3);
                 float: left;
@@ -308,14 +314,10 @@ body{
 /* start footer's css */
     footer{
         background-color: black;
-        width: 100%; /*provvisorio*/
-        height: 300px; /*provvisorio*/
     }
 
     footer .container{
-        background-color: greenyellow;
         width: 80%; /*provvisorio*/
-        height: 250px; /*provvisorio*/
         margin: auto;
     }
 
@@ -326,25 +328,42 @@ body{
         }
 
         footer .container .cln{
-            background-color: orange;
-            width: 18.4%;
-            height: 100%;
+            width: calc(100% / 5);
             float: left;
-            margin: 0% 0% 2% 2%;
+            padding: 20px;
+            margin-top: 50px;
         }
 
-        footer .container .cln:first-child{
-            margin-left: 0%;
-        }
+            footer .cln .down_title{
+                color: #fff;
+                font-weight: bold;
+            }
 
-        footer .container .cln:last-child{
-            margin-right: 0%;
-        }
+            footer .cln ul{
+                margin-top: 20px;
+            }
+
+            footer .cln li{
+                list-style: none;
+            }
+
+            footer .cln li a{
+                text-decoration: none;
+                color: #fff;
+            }
 
     footer .down{
-        background-color: red;
         width: 80%;
-        height: 50px;
         margin: auto;
     }
+
+        footer .down .lingua{
+            color: #fff;
+            padding: 30px 20px;
+            font-size: 10px;
+            margin-top: 100px;
+            display: inline-block;
+            border-top: 1px solid #fff;
+        }
+
 /* footer's css end */
