@@ -1,77 +1,142 @@
+/* start genelar's css */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    background-color: #0063f9 ;
+    color: #fff;
+    padding: 5px 15px;
+}
+/* general's css end */
+
 /* start header's css */
     header .menu{
-        background-color: grey;
-        width: 100%; /*provvisorio*/
-        height: 50px; /*provvisorio*/
+        background-color: #fff;
         position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 999;
+        line-height: 100px;
+        width: 100%;
     }
 
-    /* start menu's css */
-        .menu .logo{
-            float: left;
-            background-color: red;
-            width: 15%; /*provvisorio*/
-            height: 50px; /*provvisorio*/
-        }
+    header .menu:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-        .menu .nav_left{
-            float: left;
-            background-color: yellow;
-            width: 30%; /*provvisorio*/
-            height: 50px; /*provvisorio*/
-        }
+    .menu .menu_left{
+        float: left;
+        display: inline-block;
+        margin-left: 20px;
+    }
 
-        .menu .nav_right{
-            float: right;
-            background-color: green;
-            width: 30%; /*provvisorio*/
-            height: 50px; /*provvisorio*/
-        }
-    /* menu's css end */
+        /* start menu_left's css */
+            .menu_left #logo{
+                float: left;
+            }
+
+                #logo a{
+                    display: inline;
+                }
+
+                #logo img{
+                    vertical-align: middle;
+                }
+
+            .menu_left .nav_left{
+                float: left;
+            }   
+
+                .nav_left ul li{
+                    display: inline;
+                }
+
+                .nav_left ul a{
+                    text-decoration: none;
+                    color: black;
+                    margin: 0px 20px;
+            }
+
+        /* menu_left's css end */
+
+    .menu .menu_right{
+        height: 100%;
+        float: right;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+        /* start menu_right's css */
+            .menu_right .nav_right{
+                float: left;
+            }
+
+                .nav_right ul li{
+                    display: inline;
+                }
+
+                .nav_right ul a{
+                    text-decoration: none;
+                    margin: 0px 20px;
+                    color: black;
+                }
+
+            .menu_right .bottone{
+                float: right;
+            }
+
+            .menu_right .bottone a{
+                text-decoration: none;
+                display: inline;
+            }
+    /* menu_right's css end */
     
     header .jumbotron{
+        margin-top: 100px; /*Se non inserisco questo margine, header sale sopra jumbotron*/
         background-color: cyan;
-        width: 100%; /*provvisorio*/
-        height: 600px; /*provvisorio*/
+        height: 700px; /*provvisorio*/
     }
 
     /* start jumbotron's css */
         .jumbotron .container{
             padding: 80px;
-            background-color: tomato;
-            width: 100%; /*provvisorio*/
+            background-color: #b0cfe5;
             height: 90%; /*provvisorio*/
         }
 
         /* start container's css */
             .container .titolo{
-                background-color: violet;
-                width: 90%; 
-                margin: auto;
-                height: 25%; /*provvisorio*/
+                font-size: 50px;
+                font-weight: bold;
             }
 
-            .jumbotron .container .content{
-                background-color: yellow;
-                width: 30%; 
-                margin: 5%;
-                height: 40%; /*provvisorio*/
+            .jumbotron .container .content_left{
+                width: 40%; 
+                margin-top: 40px;
                 float: left;
             }
 
-            .jumbotron .container .img{
-                background-color: blue;
-                width: 50%; 
-                margin: 5%;
-                height: 100%; /*provvisorio*/
-                float: right;
-            }
+                .content_left p{
+                    margin-bottom: 30px;
+                }
+
+                .content_left .content{
+                    margin-top: 15px;
+                }
+
+                .content_left .fas{
+                    margin: 30px 0px;
+                    font-size: 40px;
+                }
         /* container's css end */
     /* jumbotron's css end */
 /* header's css end */
