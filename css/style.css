@@ -212,8 +212,7 @@ body{
                 .partner_dropbox .container img{
                     width: 500px;
                     height: 500px;
-                object-fit: cover;
-                    
+                    object-fit: cover;   
                 }
 
             .partner_dropbox .container .content{
@@ -233,46 +232,25 @@ body{
                 }
         /* partner_dropbox's css end */
 
-    main .operazioni_dropbox_business{
-        background-color: darkolivegreen;
-        width: 100%; /*provvisorio*/
-        height: 600px; /*provvisorio*/
-    }
-
-        .operazioni_dropbox_business .container{
-            background-color: yellow;
-            width: 80%; /*provvisorio*/
-            height: 100%; /*provvisorio*/
-            margin: auto;
-        }
-
-        .operazioni_dropbox_business .container h2{
-                background-color: pink;
-                height: 5%; /*provvisorio*/
-                width: 80%; /*provvisorio*/
-            }
-
             .operazioni_dropbox_business .container .row{
-                background-color: maroon;
-                width: 100%;
-                height: 50%;
+                
+                margin-top: 20px;
             }
 
             .operazioni_dropbox_business .row .content{
-                background-color: red;
-                width: 30%;
-                height: 80%;
+                width: calc(100% / 3);
                 float: left;
-                margin: 0% 0% 5% 5%;
+                padding: 20px;
             }
 
-            .operazioni_dropbox_business .row .content:first-child{
-                margin-left: 0%;
-            }
+                .operazioni_dropbox_business .content img{
+                    width: 100%;
+                }
 
-            .operazioni_dropbox_business .row .content:last-child{
-                margin-right: 0%;
-            }
+                .operazioni_dropbox_business .content p{
+                    font-size: 10px;
+                    margin: 10px 0px;
+                }
 
     main .team_dropbox_business{
         background-color: brown;
