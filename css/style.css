@@ -277,6 +277,48 @@ body{
                         clear: both;
                     }
 
+                        .down .testa{
+                            border-bottom: solid 1px black;
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                        .down .contenitore{
+                            margin: 20px;
+                        }
+
+                        .down .contenitore::after{
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
+
+                            .down .contenitore .contenuto{
+                                float: left;
+                                display: inline-block;
+                            }
+
+                            .down .contenitore .contenuto div:first-child{
+                                font-weight: bold;
+                                margin: 10px 0px;
+                                font-size: 30px;
+                            }
+
+                            .down .contenitore .contenuto div:nth-child(2){
+                                font-weight: bold;
+                                margin: 10px 0px;
+                            }
+                            
+                            .down .contenitore .contenuto div:nth-child(3){
+                                font-size: 10px;
+                                margin: 20px 0px;
+                            }
+
+                            .down .contenitore .btn{
+                                float: right;
+                                display: inline-block;
+                            }
+
             /* container's css end */
     /* piano_dropbox's css end */
 
