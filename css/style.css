@@ -102,7 +102,6 @@ body{
     
     header .jumbotron{
         margin-top: 100px; /*Se non inserisco questo margine, header sale sopra jumbotron*/
-        background-color: cyan;
         height: 700px; /*provvisorio*/
     }
 
@@ -142,55 +141,49 @@ body{
 /* header's css end */
 
 /* start main's css */
+    main{
+        width: 80%; /*provvisorio*/
+        height: 100%; /*provvisorio*/
+        margin: auto;
+    }
+    
     main .piano_dropbox{
-        background-color: darkmagenta;
+
         width: 100%; /*provvisorio*/
         height: 600px; /*provvisorio*/
     }
 
     /* start piano_dropbox's css */
         .piano_dropbox .container{
-            background-color: tomato;
-            width: 80%; /*provvisorio*/
-            height: 100%; /*provvisorio*/
-            margin: auto;
             padding-top: 60px;
         }
 
             /* start container's css */
-                .piano_dropbox .container h2{
-                    background-color: violet;
-                    width: 80%; 
-                    height: 5%; /*provvisorio*/
-                }
-
                 .container .fatturazione{
-                    background-color: cyan;
-                    width: 100%;
-                    height: 95%; /*provvisorio*/
                     margin-top: 20px;
                 }
 
+                    .fatturazione .radio #pallino{
+                        width: 20px;
+                        height: 20px;
+                        border: solid 5px #0063f9;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+
                     .piano_dropbox .fatturazione .content{
-                        background-color: red;
-                        width: 30%;
-                        height: 60%;
+                        border: solid 1px black;
+                        width: calc(100% / 3);
+                        height: 800px; /*provvisiorio*/
                         float: left;
-                        margin: 0% 0% 5% 5%;
-                    }
-
-                    .piano_dropbox .fatturazione .content:first-child{
-                        margin-left: 0%;
-                    }
-
-                    .piano_dropbox .fatturazione .content:last-child{
-                        margin-right: 0%;
+                        padding: 10px;
+                        margin-top: 20px;
                     }
 
                     .piano_dropbox .fatturazione .down{
-                        background-color: red;
+                        border: solid 1px black;
                         width: 100%;
-                        height: 20%;
+                        height: 200px;
                         float: left;
                         margin: 5% 0%;
                     }
