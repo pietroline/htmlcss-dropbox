@@ -173,12 +173,95 @@ body{
 
                     .piano_dropbox .fatturazione .content{
                         border: solid 1px black;
-                        width: calc(100% / 3);
-                        height: 800px; /*provvisiorio*/
+                        width: calc(100% / 3 - 20px);
+                        height: 1100px;
                         float: left;
-                        padding: 10px;
+                        margin: 10px;
                         margin-top: 20px;
                     }
+
+                        .fatturazione .content .testa{
+                            border-bottom: solid 1px black;
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                        .fatturazione .container_interno{
+                            padding: 30px;
+                        }
+
+                            .container_interno div:first-child{
+                                font-weight: bold;
+                            }
+
+                            .container_interno div:nth-child(2){
+                                font-weight: bold;
+                                margin: 10px 0px;
+                            }
+
+                            .container_interno div:nth-child(3){
+                                color: grey;
+                                margin: 10px 0px;
+                            }
+                            
+                            .container_interno div:nth-child(4){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(5){
+                                margin: 10px 0px;
+                            }
+
+                            .container_interno div:nth-child(6){
+                                margin: 10px 0px;
+                            }
+
+                            .container_interno div:nth-child(7){
+                                margin: 30px 0px;
+                                text-align: center;
+                            }
+
+                            .container_interno div:nth-child(8){
+                                margin: 30px 0px;
+                                padding: 30px 0px;
+                                border-bottom: 1px solid grey;
+                                display: inline;
+                            }
+
+                                .container_interno div:nth-child(9){
+                                    margin: 30px 0px;
+                                    color: #1e75fa;
+                                    display: inline;
+                                }
+
+                            .container_interno div:nth-child(10){
+                                margin-top: 30px;
+                                font-weight: bold;
+                                padding-top: 30px;
+                            }
+
+                            .container_interno div:nth-child(11){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(12){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(13){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(14){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(15){
+                                margin: 30px 0px;
+                            }
+
+
+                        
 
                     .piano_dropbox .fatturazione .down{
                         border: solid 1px black;
