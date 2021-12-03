@@ -188,7 +188,7 @@ body{
                         margin: 5% 0%;
                     }
 
-                    .piano_dropbox .fatturazione .conten::after{
+                    .piano_dropbox .fatturazione:after{
                         content: "";
                         display: table;
                         clear: both;
@@ -197,20 +197,8 @@ body{
             /* container's css end */
     /* piano_dropbox's css end */
 
-    main .partner_dropbox{
-        background-color: darkorange;
-        width: 100%; /*provvisorio*/
-        height: 300px; /*provvisorio*/
-    }
 
         /* start partner_dropbox's css */
-            .partner_dropbox .container{
-                background-color: chartreuse;
-                width: 80%; /*provvisorio*/
-                height: 100%; /*provvisorio*/
-                margin: auto;
-            }
-
             .partner_dropbox .container:after{
                 content:"";
                 display: table;
@@ -218,18 +206,31 @@ body{
             }
 
             .partner_dropbox .container .img{
-                background-color: blue;
-                width: 50%;
-                height: 100%;
                 float: left;
             }
 
+                .partner_dropbox .container img{
+                    width: 500px;
+                    height: 500px;
+                object-fit: cover;
+                    
+                }
+
             .partner_dropbox .container .content{
-                background-color: red;
-                width: 50%;
-                height: 100%;
+                width: calc(100% - 500px);
                 float: left;
+                padding: 50px;
             }
+
+                .partner_dropbox .content p{
+                    margin: 20px 0px;
+                }
+                
+                .partner_dropbox .content .btn{
+                    border: 1px solid black;
+                    background-color: transparent;
+                    color: black;
+                }
         /* partner_dropbox's css end */
 
     main .operazioni_dropbox_business{
