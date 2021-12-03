@@ -233,7 +233,6 @@ body{
         /* partner_dropbox's css end */
 
             .operazioni_dropbox_business .container .row{
-                
                 margin-top: 20px;
             }
 
@@ -264,49 +263,65 @@ body{
         height: 300px; /*provvisorio*/
     }
 
-    main .banner_prova_gratuita{
-        background-color: pink;
-        width: 100%; /*provvisorio*/
-        height: 200px; /*provvisorio*/
-    }
-
-    main .faq{
-        background-color: midnightblue;
-        width: 100%; /*provvisorio*/
-        height: 400px; /*provvisorio*/
-    }
-
-    /* start banner_prova_gratuita's css */
-        .banner_prova_gratuita .container{
-            background-color: cyan;
-            width: 80%; /*provvisorio*/
-            height: 100%; /*provvisorio*/
-            margin: auto;
+        .banner_prova_gratuita .container::after{
+            content:"";
+            display: table;
+            clear: both;
         }
 
-    /* banner_prova_gratuita's css end*/
+            .banner_prova_gratuita .container{
+                background-color: #b0cfe5 ;
+                padding: 80px;
+            }
+
+            .banner_prova_gratuita .container .content{
+                float: left;
+                font-size: 30px;
+                width: 60%;
+            }
+
+            .banner_prova_gratuita .container .btn{
+                float: right;
+                background-color: #fff;
+                color: #000;
+            }
+
+   
 
     /* start faq's css */
-        .faq .container{
-            background-color: red;
-            width: 80%; /*provvisorio*/
-            height: 100%; /*provvisorio*/
-            margin: auto;
+        .faq{
+            margin: 100px 0px;
         }
-
-            .faq .container .domande{
-                background-color: yellow;
-                width: 100%;
-                height: 10%;
-                
+            .faq .domande_frequenti{
+                padding-top: 50px;
+                margin-bottom: 50px;
+                font-weight: bold;
+                font-size: 20px;
             }
 
-            .faq .container .content{
-                background-color: green;
-                width: 100%;
-                height: 10%;
-                margin: 5% 0px;
-            }
+                .faq .domande{
+                    border-top: 1px solid lightgrey;
+                    line-height: 80px;
+                }
+
+                .faq .domande:last-child{
+                    border-bottom: 1px solid lightgrey;
+                }
+
+                .faq .domande_frequenti::after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                    .domande_frequenti .domande .domanda{
+                        float: left;
+                    }
+
+                    .domande_frequenti .domande .freccia_bassa{
+                        float: right;
+                    }
+          
 
     /* faq's css end */
 /* main's css end */
