@@ -112,6 +112,12 @@ body{
             height: 90%; /*provvisorio*/
         }
 
+        .jumbotron .container .content::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         /* start container's css */
             .container .titolo{
                 font-size: 50px;
@@ -136,19 +142,26 @@ body{
                     margin: 30px 0px;
                     font-size: 40px;
                 }
+
+            /* penso dovrei inserirlo per funzioanre correttamente */
+            /* .jumbotron .container .content_right{
+                float: right;
+              
+            } */
+
+                .jumbotron .content_right img{
+                    width: 50%;
+                    margin-top: 40px;
+                }
         /* container's css end */
     /* jumbotron's css end */
 /* header's css end */
 
-/* start main's css */
-    main{
+/* start main's css */ 
+    main .piano_dropbox{
         width: 80%; /*provvisorio*/
         height: 100%; /*provvisorio*/
         margin: auto;
-    }
-    
-    main .piano_dropbox{
-
         width: 100%; /*provvisorio*/
         height: 600px; /*provvisorio*/
     }
@@ -163,12 +176,20 @@ body{
                     margin-top: 20px;
                 }
 
-                    .fatturazione .radio #pallino{
+                .container .fatturazione .fas.check{
+                    color: #3d89fa;
+                }
+
+                    .fatturazione .radio .pallino{
                         width: 20px;
                         height: 20px;
-                        border: solid 5px #0063f9;
+                        border: 1px solid #000;
                         border-radius: 50%;
                         display: inline-block;
+                    }
+
+                    .fatturazione .radio .pallino.blu{
+                        border: solid 5px #0063f9;
                     }
 
                     .piano_dropbox .fatturazione .content{
@@ -324,6 +345,11 @@ body{
 
 
         /* start partner_dropbox's css */
+        main .partner_dropbox{
+            width: 80%; /*provvisorio*/
+            height: 100%; /*provvisorio*/
+            margin: auto;
+        }
             .partner_dropbox .container:after{
                 content:"";
                 display: table;
@@ -356,6 +382,12 @@ body{
                     color: black;
                 }
         /* partner_dropbox's css end */
+
+            main .operazioni_dropbox_business{
+                width: 80%; /*provvisorio*/
+                height: 100%; /*provvisorio*/
+                margin: auto;
+            }
 
             .operazioni_dropbox_business .container .row{
                 margin-top: 20px;
@@ -403,6 +435,8 @@ body{
                 float: left;
                 font-size: 30px;
                 width: 60%;
+                color: #650f2f;
+                font-weight: bold;
             }
 
             .banner_prova_gratuita .container .btn{
@@ -414,6 +448,12 @@ body{
    
 
     /* start faq's css */
+        .faq .container{
+            width: 80%; /*provvisorio*/
+            height: 100%; /*provvisorio*/
+            margin: auto;
+        }    
+
         .faq{
             margin: 100px 0px;
         }
