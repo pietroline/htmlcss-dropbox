@@ -160,9 +160,7 @@ body{
 /* start main's css */ 
     main .piano_dropbox{
         width: 80%; /*provvisorio*/
-        height: 100%; /*provvisorio*/
         margin: auto;
-        width: 100%; /*provvisorio*/
         height: 600px; /*provvisorio*/
     }
 
