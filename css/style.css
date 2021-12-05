@@ -412,13 +412,135 @@ body{
                     margin: 10px 0px;
                 }
 
-    main .team_dropbox_business{
-        background-color: brown;
-        width: 100%; /*provvisorio*/
-        height: 300px; /*provvisorio*/
-    }
+            .operazioni_dropbox_business .marchettata{
+                width: 50vw;
+                margin: 50px 0px;
+            }
 
-        .banner_prova_gratuita .container::after{
+                .operazioni_dropbox_business .marchettata div:first-child{
+                    
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                .operazioni_dropbox_business .marchettata div:nth-child(2){
+                    
+                    color: #176fff;
+                }
+
+
+
+    
+
+        .team_dropbox_business:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .tdb_left{
+            float: left;
+            background-color: turquoise;
+            width: 30vw;
+        }
+        
+            .quadrato img{
+                width: 15vw;
+                height: 15vw;
+                object-fit: contain;
+                padding: 2vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .tdb_left .quadrato{
+                width: 15vw;
+                height: 15vw;
+                background-color: coral;
+                float: left;
+                position: relative;
+            }
+
+                .tdb_left .quadrato:first-child{
+                    background-color: #a2d39b;
+                    border: 1vw solid #d0e9cd;
+                }
+
+                .tdb_left .quadrato:nth-child(2){
+                    background-color: #61082b;
+                }
+
+                .tdb_left .quadrato:nth-child(3){
+                    background-color: #0093ce;
+                }
+
+                .tdb_left .quadrato:last-child{
+                    background-color: #ff1c1c;
+                }
+
+        .tdb_center{
+            float: left;
+            background-color: #f5f5f5;
+            width: calc(100% - 60vw);
+            height: 30vw;
+            overflow: auto;
+        }
+
+            .tdb_center .content{
+                padding: 40px;
+            }
+
+            .tdb_center img{
+                width: 10vw;
+                padding-bottom: 40px;
+                border-bottom: 1px solid lightgray;
+            }
+
+            .tdb_center .content p{
+                margin: 40px 0px;
+            }
+
+            .tdb_center .content p:last-child{
+                margin-bottom: 0px;
+            }
+
+        .tdb_right{
+            float: left;
+            background-color: red;
+            width: 30vw;
+        }
+
+            .tdb_right .quadrato{
+                width: 15vw;
+                height: 15vw;
+                background-color: orange;
+                float: left;
+                position: relative;
+            }
+
+                .tdb_right .quadrato:first-child{
+                    background-color: #d5001f;
+                }
+
+                .tdb_right .quadrato:nth-child(2){
+                    background-color: #b4d0e7;
+                }
+
+                .tdb_right .quadrato:nth-child(3){
+                    background-color: #0d2481;
+                }
+
+                .tdb_right .quadrato:last-child{
+                    background-color: #ffd830;
+                }
+
+
+
+
+
+    .banner_prova_gratuita .container::after{
             content:"";
             display: table;
             clear: both;
