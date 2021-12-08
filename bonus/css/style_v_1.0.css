@@ -1,0 +1,693 @@
+/* start genelar's css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    background-color: #0063f9 ;
+    color: #fff;
+    padding: 5px 15px;
+}
+/* general's css end */
+
+/* start header's css */
+    header .menu{
+        background-color: #fff;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 999;
+        line-height: 100px;
+        width: 100%;
+    }
+
+    header .menu:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .menu .menu_left{
+        float: left;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+        /* start menu_left's css */
+            .menu_left #logo{
+                float: left;
+            }
+
+                #logo a{
+                    display: inline;
+                }
+
+                #logo img{
+                    vertical-align: middle;
+                }
+
+            .menu_left .nav_left{
+                float: left;
+            }   
+
+                .nav_left ul li{
+                    display: inline;
+                }
+
+                .nav_left ul a{
+                    text-decoration: none;
+                    color: black;
+                    margin: 0px 20px;
+            }
+
+        /* menu_left's css end */
+
+    .menu .menu_right{
+        height: 100%;
+        float: right;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+        /* start menu_right's css */
+            .menu_right .nav_right{
+                float: left;
+            }
+
+                .nav_right ul li{
+                    display: inline;
+                }
+
+                .nav_right ul a{
+                    text-decoration: none;
+                    margin: 0px 20px;
+                    color: black;
+                }
+
+            .menu_right .bottone{
+                float: right;
+            }
+
+            .menu_right .bottone a{
+                text-decoration: none;
+                display: inline;
+            }
+    /* menu_right's css end */
+    
+    header .jumbotron{
+        margin-top: 100px; /*Se non inserisco questo margine, header sale sopra jumbotron*/
+        height: 700px; /*provvisorio*/
+    }
+
+    /* start jumbotron's css */
+        .jumbotron .container{
+            padding: 80px;
+            background-color: #b0cfe5;
+            height: 90%; /*provvisorio*/
+        }
+
+        .jumbotron .container .content::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* start container's css */
+            .container .titolo{
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .jumbotron .container .content_left{
+                width: 40%; 
+                margin-top: 40px;
+                float: left;
+            }
+
+                .content_left p{
+                    margin-bottom: 30px;
+                }
+
+                .content_left .content{
+                    margin-top: 15px;
+                }
+                
+                .content_left .btn a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                .content_left .fas{
+                    margin: 30px 0px;
+                    font-size: 40px;
+                }
+
+            /* penso dovrei inserirlo per funzioanre correttamente */
+            /* .jumbotron .container .content_right{
+                float: right;
+              
+            } */
+
+                .jumbotron .content_right img{
+                    width: 50%;
+                    margin-top: 40px;
+                }
+        /* container's css end */
+    /* jumbotron's css end */
+/* header's css end */
+
+/* start main's css */ 
+    main .piano_dropbox{
+        width: 80%; /*provvisorio*/
+        margin: auto;
+        height: 600px; /*provvisorio*/
+    }
+
+    /* start piano_dropbox's css */
+        .piano_dropbox .container{
+            padding-top: 60px;
+        }
+
+            /* start container's css */
+                .container .fatturazione{
+                    margin-top: 20px;
+                }
+
+                .container .fatturazione .fas.check{
+                    color: #3d89fa;
+                }
+
+                    .fatturazione .radio .pallino{
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #000;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+
+                    .fatturazione .radio .pallino.blu{
+                        border: solid 5px #0063f9;
+                    }
+
+                    .piano_dropbox .fatturazione .content{
+                        border: solid 1px black;
+                        width: calc(100% / 3 - 20px);
+                        height: 1100px;
+                        float: left;
+                        margin: 10px;
+                        margin-top: 20px;
+                    }
+
+                        .fatturazione .content .testa{
+                            border-bottom: solid 1px black;
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                        .fatturazione .container_interno{
+                            padding: 30px;
+                        }
+
+                            .container_interno div:first-child{
+                                font-weight: bold;
+                            }
+
+                            .container_interno div:nth-child(2){
+                                font-weight: bold;
+                                margin: 10px 0px;
+                            }
+
+                            .container_interno div:nth-child(3){
+                                color: grey;
+                                margin: 10px 0px;
+                            }
+                            
+                            .container_interno div:nth-child(4){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(5){
+                                margin: 10px 0px;
+                            }
+
+                            .container_interno div:nth-child(6){
+                                margin: 10px 0px;
+                            }
+
+                            .container_interno div:nth-child(7){
+                                margin: 30px 0px;
+                                text-align: center;
+                            }
+
+                            .container_interno div:nth-child(8){
+                                margin: 30px 0px;
+                                padding: 30px 0px;
+                                border-bottom: 1px solid grey;
+                                display: inline;
+                            }
+
+                                .container_interno div:nth-child(9){
+                                    margin: 30px 0px;
+                                    color: #1e75fa;
+                                    display: inline;
+                                }
+
+                            .container_interno div:nth-child(10){
+                                margin-top: 30px;
+                                font-weight: bold;
+                                padding-top: 30px;
+                            }
+
+                            .container_interno div:nth-child(11){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(12){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(13){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(14){
+                                margin: 30px 0px;
+                            }
+
+                            .container_interno div:nth-child(15){
+                                margin: 30px 0px;
+                            }
+
+
+                        
+
+                    .piano_dropbox .fatturazione .down{
+                        border: solid 1px black;
+                        width: 100%;
+                        height: 200px;
+                        float: left;
+                        margin: 5% 0%;
+                    }
+
+                    .piano_dropbox .fatturazione:after{
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+
+                        .down .testa{
+                            border-bottom: solid 1px black;
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                        .down .contenitore{
+                            margin: 20px;
+                        }
+
+                        .down .contenitore::after{
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
+
+                            .down .contenitore .contenuto{
+                                float: left;
+                                display: inline-block;
+                            }
+
+                            .down .contenitore .contenuto div:first-child{
+                                font-weight: bold;
+                                margin: 10px 0px;
+                                font-size: 30px;
+                            }
+
+                            .down .contenitore .contenuto div:nth-child(2){
+                                font-weight: bold;
+                                margin: 10px 0px;
+                            }
+                            
+                            .down .contenitore .contenuto div:nth-child(3){
+                                font-size: 10px;
+                                margin: 20px 0px;
+                            }
+
+                            .down .contenitore .btn{
+                                float: right;
+                                display: inline-block;
+                            }
+
+            /* container's css end */
+    /* piano_dropbox's css end */
+
+
+        /* start partner_dropbox's css */
+        main .partner_dropbox{
+            width: 80%; /*provvisorio*/
+            height: 100%; /*provvisorio*/
+            margin: auto;
+        }
+            .partner_dropbox .container:after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+
+            .partner_dropbox .container .img{
+                float: left;
+            }
+
+                .partner_dropbox .container img{
+                    width: 500px;
+                    height: 500px;
+                    object-fit: cover;   
+                }
+
+            .partner_dropbox .container .content{
+                width: calc(100% - 500px);
+                float: left;
+                padding: 50px;
+            }
+
+                .partner_dropbox .content p{
+                    margin: 20px 0px;
+                }
+                
+                .partner_dropbox .content .btn{
+                    border: 1px solid black;
+                    background-color: transparent;
+                    color: black;
+                }
+        /* partner_dropbox's css end */
+
+            main .operazioni_dropbox_business{
+                width: 80%; /*provvisorio*/
+                height: 100%; /*provvisorio*/
+                margin: auto;
+            }
+
+            .operazioni_dropbox_business .container h2{
+                margin-top: 50px;
+            }
+
+            .operazioni_dropbox_business .container .row{
+                margin-top: 20px;
+            }
+
+            .operazioni_dropbox_business .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .operazioni_dropbox_business .row .content{
+                width: calc(100% / 3);
+                float: left;
+                padding: 20px;
+            }
+
+                .operazioni_dropbox_business .content img{
+                    width: 100%;
+                }
+
+                .operazioni_dropbox_business .content p{
+                    font-size: 10px;
+                    margin: 10px 0px;
+                }
+
+            .operazioni_dropbox_business .marchettata{
+                width: 50vw;
+                margin-bottom: 50px;
+                margin-top: 100px;
+            }
+
+                .operazioni_dropbox_business .marchettata div:first-child{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                .operazioni_dropbox_business .marchettata div:nth-child(2){
+                    color: #176fff;
+                }
+
+
+
+    
+
+        .team_dropbox_business:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .tdb_left{
+            float: left;
+            background-color: turquoise;
+            width: 30vw;
+        }
+        
+            .quadrato img{
+                width: 15vw;
+                height: 15vw;
+                object-fit: contain;
+                padding: 2vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(110deg) brightness(98%) contrast(108%);
+            }
+
+            .tdb_left .quadrato{
+                width: 15vw;
+                height: 15vw;
+                background-color: coral;
+                float: left;
+                position: relative;
+            }
+
+                .tdb_left .quadrato:first-child{
+                    background-color: #a2d39b;
+                    border: 1vw solid #d0e9cd;
+                }
+
+                .tdb_left .quadrato:nth-child(2){
+                    background-color: #61082b;
+                }
+
+                .tdb_left .quadrato:nth-child(3){
+                    background-color: #0093ce;
+                }
+
+                .tdb_left .quadrato:last-child{
+                    background-color: #ff1c1c;
+                }
+
+        .tdb_center{
+            float: left;
+            background-color: #f5f5f5;
+            width: calc(100% - 60vw);
+            height: 30vw;
+            overflow: auto;
+        }
+
+            .tdb_center .content{
+                padding: 40px;
+            }
+
+            .tdb_center img{
+                width: 10vw;
+                padding-bottom: 40px;
+                border-bottom: 1px solid lightgray;
+            }
+
+            .tdb_center .content p{
+                margin: 40px 0px;
+            }
+
+            .tdb_center .content p:last-child{
+                margin-bottom: 0px;
+            }
+
+        .tdb_right{
+            float: left;
+            background-color: red;
+            width: 30vw;
+        }
+
+            .tdb_right .quadrato{
+                width: 15vw;
+                height: 15vw;
+                background-color: orange;
+                float: left;
+                position: relative;
+            }
+
+                .tdb_right .quadrato:first-child{
+                    background-color: #d5001f;
+                }
+
+                .tdb_right .quadrato:nth-child(2){
+                    background-color: #b4d0e7;
+                }
+
+                .tdb_right .quadrato:nth-child(3){
+                    background-color: #0d2481;
+                }
+
+                .tdb_right .quadrato:last-child{
+                    background-color: #ffd830;
+                }
+
+
+
+
+
+    .banner_prova_gratuita .container::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+            .banner_prova_gratuita .container{
+                background-color: #b0cfe5 ;
+                padding: 80px;
+            }
+
+            .banner_prova_gratuita .container .content{
+                float: left;
+                font-size: 30px;
+                width: 60%;
+                color: #650f2f;
+                font-weight: bold;
+            }
+
+            .banner_prova_gratuita .container .btn{
+                float: right;
+                background-color: #fff;
+                color: #000;
+            }
+
+   
+
+    /* start faq's css */
+        .faq .container{
+            width: 80%; /*provvisorio*/
+            height: 100%; /*provvisorio*/
+            margin: auto;
+        }    
+
+        .faq{
+            margin: 100px 0px;
+        }
+            .faq .domande_frequenti{
+                padding-top: 50px;
+                margin-bottom: 50px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+                .faq .domande{
+                    border-top: 1px solid lightgrey;
+                    line-height: 80px;
+                }
+
+                .faq .domande:after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                    .faq .domande span:first-child{
+                        float: left;
+                    }
+
+                    .faq .domande span:last-child{
+                        float: right;
+                    }
+
+                .faq .domande:last-child{
+                    border-bottom: 1px solid lightgrey;
+                }
+
+                .faq .domande_frequenti::after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                    .domande_frequenti .domande .domanda{
+                        float: left;
+                    }
+
+                    .domande_frequenti .domande .freccia_bassa{
+                        float: right;
+                    }
+          
+
+    /* faq's css end */
+/* main's css end */
+
+/* start footer's css */
+    footer{
+        background-color: black;
+    }
+
+    footer .container{
+        width: 80%; /*provvisorio*/
+        margin: auto;
+    }
+
+        footer .container::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer .container .cln{
+            width: calc(100% / 5);
+            float: left;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+            footer .cln .down_title{
+                color: #fff;
+                font-weight: bold;
+            }
+
+            footer .cln ul{
+                margin-top: 20px;
+            }
+
+            footer .cln li{
+                list-style: none;
+                margin: 10px 0px;
+            }
+
+            footer .cln li a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+    footer .down{
+        width: 80%;
+        margin: auto;
+    }
+
+        footer .down .lingua{
+            color: #989898;
+            padding: 30px 0px;
+            font-size: 15px;
+            margin-top: 100px;
+            display: inline-block;
+            border-top: 1px solid #fff;
+        }
+
+/* footer's css end */
