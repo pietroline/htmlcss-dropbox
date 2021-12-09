@@ -627,3 +627,7 @@ footer .down{
 .underline:hover{
     text-decoration: underline;
 }
+
+.font-size_20{
+    font-size: 20px;
+}
