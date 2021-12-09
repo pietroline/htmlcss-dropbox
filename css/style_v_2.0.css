@@ -112,6 +112,10 @@ body{
     line-height: 80px;
 }
 
+.line_height_70{
+    line-height: 70px;
+}
+
 .text_decoration_none{
     text-decoration: none;
 }
@@ -132,6 +136,10 @@ body{
     background-color: #0063f9;
     color: #fff;
     padding: 5px 10px;
+}
+
+.bordo_menu:hover{
+    border-bottom: 5px solid greenyellow;
 }
 
 .jumbotron{
