@@ -189,6 +189,10 @@ body{
     font-size: 4rem;
 }
 
+.font_size_2rem{
+    font-size: 2rem;
+}
+
 .font_weight_bold{
     font-weight: bold;
 }
@@ -251,7 +255,7 @@ body{
 .presentazione .cln{
     border: 1px solid lightgray;
     width: calc(100% / 3 - 20px);
-    height: 1100px; /*ATTENZIONEEEEEEEEEE che valore inserire correttamnete, mettere in vh??*/ 
+    min-height: 1000px;
 }
 
 .text_align_center{
@@ -266,6 +270,18 @@ main .fatturazione .contenuto:after{
 
 main .fatturazione .contenuto span{
     width: 95%;
+}
+
+.contenitore_interno .contenuto::after{
+    content: "";
+    display: table;
+    clear: both;
+}   
+
+.contenitore_interno .check{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .border{
@@ -315,6 +331,10 @@ main .fatturazione .contenuto span{
 
 .padding_50_0_0_0{
     padding: 50px 0px;
+}
+
+.padding_0_5{
+    padding: 0px 5px;
 }
 
 .color_grey{
