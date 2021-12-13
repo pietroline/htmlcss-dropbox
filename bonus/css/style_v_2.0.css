@@ -20,6 +20,10 @@ body{
     width: 100%;
 }
 
+.min_width_1175px{
+    min-width: 1175px;
+}
+
 .contenitore:after{
     content: "";
     display: table;
