@@ -453,6 +453,10 @@ main .fatturazione .contenuto span{
     position: relative;
 }
 
+.bottom_150px_neg{
+    bottom: -150px;
+}
+
 .background_color_a2d39b{
     background-color: #a2d39b;
 }
